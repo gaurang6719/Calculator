@@ -1,4 +1,5 @@
 {
   "version": 2,
-  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }]
+  "builds": [{ "src": "public/**/*", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "/public/$1" }]
 }
