@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass scss/main.scss dist/css/main.css"
+    "build": "sass scss/main.scss public/dist/css/main.css"
   },
   "repository": {
     "type": "git",
