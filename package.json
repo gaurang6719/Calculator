@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass scss/main.scss public/dist/css/main.css"
+    "build": "sass scss/main.scss public/dist/css/main.css",
+    "vercel-build": "npm run build"
   },
   "repository": {
     "type": "git",
