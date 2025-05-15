@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="./calculator.png" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="calculation" id="calculation"></div>
+        <div class="result" id="result"></div>
+      </div>
+      <div class="buttons">
+        <button class="special" onclick="clearAll()">C</button>
+        <button class="special" onclick="addToInput('%')">%</button>
+        <button class="special" onclick="toggleSign()">+/-</button>
+        <button class="special" onclick="addToInput('/')">÷</button>
+
+        <button onclick="addToInput('7')">7</button>
+        <button onclick="addToInput('8')">8</button>
+        <button onclick="addToInput('9')">9</button>
+        <button class="special" onclick="addToInput('*')">×</button>
+
+        <button onclick="addToInput('4')">4</button>
+        <button onclick="addToInput('5')">5</button>
+        <button onclick="addToInput('6')">6</button>
+        <button class="special" onclick="addToInput('-')">-</button>
+
+        <button onclick="addToInput('1')">1</button>
+        <button onclick="addToInput('2')">2</button>
+        <button onclick="addToInput('3')">3</button>
+        <button class="special" onclick="addToInput('+')">+</button>
+
+        <button onclick="addToInput('0')">0</button>
+        <button onclick="backspace()">←</button>
+        <button onclick="addToInput('.')">.</button>
+        <button class="equals" onclick="calculate()">=</button>
+      </div>
+      <div class="error" id="error-message"></div>
+    </div>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
